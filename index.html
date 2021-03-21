@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		.FI {
+			display: flex;
+		}
+		.card-number {
+			display: flex;
+
+		}
+		div {
+			margin: 10px;
+		}
+		#btn {
+			margin: 10px;
+		}
+		.card {
+			margin: 13px 5px 0 5px;
+			width: 50px;
+			height: 20px;
+		}
+		.user {
+			margin: 5px;
+		}
+		#information {
+			display: none;
+		}
+		#information[data-open="true"] {
+			display: block;
+		}
+	</style>
+	<div class="FI">
+		<input class="user" id="firstName" type="text" placeholder="Введите имя">
+		<input  class="user" id="lastName" type="text" placeholder="Введите фамилию">
+	</div>
+	<div class="card-number">
+		<p>
+			Введите номер карты:
+		</p>
+		<input class="card" id="first" type="number">
+		<input class="card" id="second" type="number">
+		<input class="card" id="third" type="number">
+		<input class="card" id="fourth" type="number">
+	</div>
+	<button id="btn">
+		Submit
+	</button>
+	<button id="show">
+		Показать
+	</button>
+	<div id="information">
+		
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
